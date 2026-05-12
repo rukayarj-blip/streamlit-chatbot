@@ -2,6 +2,33 @@ import streamlit as st
 import random
 
 st.set_page_config(
+st.markdown("""
+<style>
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;}
+
+[data-testid="stToolbar"] {
+    display: none;
+}
+
+[data-testid="stDecoration"] {
+    display: none;
+}
+
+[data-testid="stStatusWidget"] {
+    display: none;
+}
+
+.viewerBadge_container__1QSob {
+    display: none;
+}
+
+.stDeployButton {
+    display: none;
+}
+</style>
+""", unsafe_allow_html=True)
     page_title="DARC",
     page_icon="🤖",
     layout="wide",
